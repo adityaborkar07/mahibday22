@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy 22rd Birthday Mahima! 🎂</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 72 72%22><text y=%22.9em%22 font-size=%2260%22>🎂</text></svg>"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-content">
+        <h2>Preparing Something Special...</h2>
+        <div class="loading-bar">
+          <div class="loading-progress" id="loadingProgress"></div>
+        </div>
+        <p class="loading-text" id="loadingText">Loading... 0%</p>
+      </div>
+    </div>
+
+    <!-- Card Overlay -->
+    <div class="card-overlay" id="cardOverlay">
+      <div class="birthday-card" id="birthdayCard">
+        <div class="card-front">
+          <div class="envelope-icon">💌</div>
+          <h1>I know you will be mad for this but still..</h1>
+          <p>Click to open your surprise...</p>
+        </div>
+        <div class="card-back">
+          <h2>Happy 22rd Birthday! <br />🎉🎉🎉</h2>
+          <p>
+            Hey, Mahima I've created something special for you...<br />
+            I hope you like it! ✨
+          </p>
+          <button class="open-btn" id="openBtn">Start! 🎈</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Timeline Container -->
+    <div class="timeline-container" id="timelineContainer">
+      <div class="section-one">
+        <h1>Hi <span>Mahima</span></h1>
+      </div>
+
+      <div class="section-two">
+        <p>I really miss you btw! ✨</p>
+      </div>
+
+      <div class="section-three">
+        <p>It's your 22nd birthday!! :D 🎂</p>
+      </div>
+
+      <div class="section-four">
+        <div class="text-box">
+          <p class="hbd-chatbox">
+Happy Birthday, Mahima! ❤️
+Honestly, I don't think words could ever do justice to how much you mean to me. You're one of those rare people who make life feel a little more beautiful just by being in it. I adore your smile, your laugh, your creativity, your little quirks and all the things that make you uniquely YOU. I hope this year takes you to beautiful places, introduces you to wonderful experiences, fills your days with your favourite music and gives you countless delicious reasons to be happy. I wish you endless adventures, unforgettable memories and everything your heart wishes for. 
+I wanted to create something special for you, something that you could call your own. I'm not the best at UI/UX, so there might be a few flaws and imperfect details, but I promise I put my heart into every little part of it. I hope that when you look at this, you see a little bit of how much you mean to me. 
+And if life is a journey, I hope I get to share many beautiful moments and adventures with you. Here's to the memories we'll make together. I adore you, Mahima. ❤️
+          </p>
+          <p class="fake-btn">Send 💌</p>
+        </div>
+      </div>
+
+      <div class="section-five">
+        <p class="idea-1">That's what I was going to say.</p>
+        <p class="idea-2">But then I realized...</p>
+        <p class="idea-3">
+          I needed to do something<br />
+          <strong>extraordinary</strong>
+        </p>
+        <p class="idea-4">Because...</p>
+        <p class="idea-5">You Are Extraordinary ✨</p>
+        <p class="idea-6">
+          <span>2</span>
+          <span>2</span>
+        </p>
+      </div>
+
+      <div class="section-six">
+        <div class="hat">
+          <img src="./img/hat.svg" alt="birthday hat" />
+        </div>
+        <img
+          src="./img/Mahi.HEIC"
+          alt="Mahi"
+          class="profile-picture"
+          id="profilePic"
+        />
+        <div class="wish">
+          <h3 class="wish-hbd">Happy Birthday Mahima!</h3>
+          <h5>
+            May this year bring you endless joy and beautiful memories! 🌟
+          </h5>
+        </div>
+      </div>
+
+      <div class="section-cake">
+        <h2 class="cake-title">Now... Make Your Wish! 🌟</h2>
+        <div class="cake-wrapper">
+          <div class="realistic-cake" id="cake">
+            <div class="plate"></div>
+            <div class="layer layer-bottom"></div>
+            <div class="layer layer-middle"></div>
+            <div class="layer layer-top"></div>
+            <div class="icing"></div>
+            <div class="drip drip1"></div>
+            <div class="drip drip2"></div>
+            <div class="drip drip3"></div>
+          </div>
+        </div>
+        <p class="blow-instruction" id="blowInstruction">
+          🌬️ Blow into your mic to blow out the candles! 🌬️
+        </p>
+        <p class="blown-message" id="blownMessage">
+          🎊 Your wish has been sent to the stars! 🎊<br />
+          May all your dreams come true! ✨
+        </p>
+      </div>
+
+      <div class="section-nine">
+        <p style="margin-bottom: 2rem">Happy Birthday My Best-Friend cum Partner! 🎂💘</p>
+        <br /><br /><br />
+        <p>So... did you love it? 💕</p>
+        <p id="replay">Click here to experience it all over again! 🔄</p>
+        <p class="last-smile">Forever yours! 💖</p>
+      </div>
+    </div>
+
+    <!-- Music Control -->
+    <div class="music-control" id="musicControl">
+      <span id="musicIcon">🔊</span>
+    </div>
+
+    <!-- Hidden Audio -->
+    <audio id="bgMusic" loop="false">
+      <source src="C:\Users\ASUS\Desktop\happybirthday-main\music\song.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
